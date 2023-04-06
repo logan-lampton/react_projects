@@ -2,7 +2,7 @@
 
 function Image() {
   return (
-  <h2>Image Placeholder</h2>
+  <img src="https://m.media-amazon.com/images/I/71ok9jCkgVL.jpg" alt="cover of Lessons in Chemistry"/>
   )
 }
 
