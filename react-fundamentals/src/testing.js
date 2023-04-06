@@ -1,11 +1,9 @@
 // rfce to create a regular function
 
-import React from 'react'
+import React from 'react';
 
 function testing() {
-  return (
-    <div>testing</div>
-  )
+  return <div>testing</div>;
 }
 
-export default testing
+export default testing;
