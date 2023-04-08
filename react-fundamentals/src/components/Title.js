@@ -1,5 +1,5 @@
-function Title() {
-  return <h2>Lessons in Chemistry</h2>;
+function Title({title}) {
+  return <h2>{title}</h2>;
 }
 
 export default Title;

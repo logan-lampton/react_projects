@@ -1,8 +1,8 @@
 // rfce to create a regular function
 
-function Image() {
+function Image({image, title}) {
   return (
-  <img src="./images/Book1.jpg" alt="cover of Lessons in Chemistry"/>
+  <img src={image} alt={title}/>
   )
 }
 

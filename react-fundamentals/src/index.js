@@ -6,10 +6,10 @@ import './style.css';
 function BookList() {
   return (
     <section className="booklist">
+      <Book image="./images/Book1.jpg" title="Lessons in Chemistry" author="Bonnie Garmus"/>
+      {/* <Book />
       <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book /> */}
     </section>
   );
 }
