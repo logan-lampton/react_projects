@@ -22,14 +22,15 @@ body {
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 
-.book{
-    background: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
+.book {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .book img {
@@ -37,13 +38,17 @@ body {
   object-fit: cover;
 }
 
-.book h2{
-    margin-top: 1rem;
+.book h2 {
+  margin-top: 1rem;
 }
 
-.book h4{
-    color: #617d98;
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-    letter-spacing: 2px;
+.book h4 {
+  color: #617d98;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.book button {
+  margin: 1rem 0 0.5rem;
 }
