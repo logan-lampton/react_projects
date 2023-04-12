@@ -1,6 +1,8 @@
+import img1 from './images/Book1.jpg';
+
 const books = [
     {
-      image: './images/Book1.jpg',
+      image: img1,
       title: 'Lessons in Chemistry',
       author: 'Bonnie Garmus',
       id: 1,
