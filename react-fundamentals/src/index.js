@@ -32,42 +32,47 @@ const books = [
 ];
 
 function BookList() {
+  const getBook = (id) => {
+    const book = books.find((book) => {
+      return book.id === id;
+    });
+    console.log(book.title);
+  };
   return (
     <section className='booklist'>
-      <EventExamples />
       {books.map((book) => {
-        return <Book {...book} key={book.id} />;
+        return <Book {...book} key={book.id} getBook={getBook} />;
       })}
     </section>
   );
 }
 
-const EventExamples = () => {
-  const handleFormChange = () => {
-    console.log('handle form input');
-  };
-  const handleButtonClick = () => {
-    console.log('handle button click');
-  };
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    console.log('form submitted');
-  };
+// const EventExamples = () => {
+//   const handleFormChange = () => {
+//     console.log('handle form input');
+//   };
+//   const handleButtonClick = () => {
+//     console.log('handle button click');
+//   };
+//   const handleFormSubmit = (e) => {
+//     e.preventDefault();
+//     console.log('form submitted');
+//   };
 
-  return (
-    <section>
-      <form onSubmit={handleFormSubmit}>
-        <input
-          type='text'
-          name='example'
-          onChange={handleFormChange}
-          style={{ margin: '1rem 0' }}
-        />
-      </form>
-      <button onClick={handleButtonClick}>Click me!</button>
-    </section>
-  );
-};
+//   return (
+//     <section>
+//       <form onSubmit={handleFormSubmit}>
+//         <input
+//           type='text'
+//           name='example'
+//           onChange={handleFormChange}
+//           style={{ margin: '1rem 0' }}
+//         />
+//       </form>
+//       <button onClick={handleButtonClick}>Click me!</button>
+//     </section>
+//   );
+// };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<BookList />);
