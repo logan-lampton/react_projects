@@ -38,3 +38,21 @@ export const socialLinks = [
     icon: "fa-brands fa-squarespace",
   },
 ];
+
+// export const titleData = [
+//   {
+//     id: 1,
+//     wordOne: "About",
+//     wordTwo: "Us",
+//   },
+//   {
+//     id: 2,
+//     wordOne: "Our",
+//     wordTwo: "Services",
+//   },
+//   {
+//     id: 1,
+//     wordOne: "Featured",
+//     wordTwo: "Tours",
+//   },
+// ];
