@@ -20,3 +20,21 @@ export const pageLinks = [
     text: "tours",
   },
 ];
+
+export const socialLinks = [
+  {
+    id: 1,
+    href: "https://www.facebook.com",
+    icon: "fab fa-facebook-f",
+  },
+  {
+    id: 2,
+    href: "https://www.twitter.com",
+    icon: "fa-brands fa-twitter",
+  },
+  {
+    id: 3,
+    href: "https://www.squarespace.com",
+    icon: "fa-brands fa-squarespace",
+  },
+];

@@ -6,6 +6,14 @@ import Services from "./components/Services";
 import Tours from "./components/Tours";
 import Footer from "./components/Footer";
 
+// import Font Awesome globally
+import { library } from '@fortawesome/fontawesome-svg-core'
+
+// import your icons
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+
 function App() {
   return (
     <>
@@ -20,3 +28,6 @@ function App() {
 }
 
 export default App;
+
+// adding the icons to the global import of the Font Awesome Library
+library.add(fab, fas, far)
