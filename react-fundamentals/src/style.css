@@ -65,3 +65,9 @@ body {
   border-bottom-right-radius: 1rem;
   background: rgb(252, 252, 46)
 }
+
+h1 {
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
