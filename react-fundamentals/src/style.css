@@ -31,6 +31,7 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
 .book img {
@@ -51,4 +52,16 @@ body {
 
 .book button {
   margin: 1rem 0 0.5rem;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.75rem;
+  font-size: 1;
+  font-weight: bold;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: rgb(252, 252, 46)
 }
