@@ -1,10 +1,10 @@
 import "./App.css";
-import ObjectExample from './01-useState/ObjectExample';
+import CurrentState from './01-useState/CurrentState';
 
 function App() {
   return (
     <div className='container'>
-      <ObjectExample />
+      <CurrentState />
     </div>
   );
 }
