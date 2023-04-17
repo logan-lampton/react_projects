@@ -1,10 +1,10 @@
 import "./App.css";
-import PeopleArray from './01-useState/PeopleArray';
+import ObjectExample from './01-useState/ObjectExample';
 
 function App() {
   return (
     <div className='container'>
-      <PeopleArray />
+      <ObjectExample />
     </div>
   );
 }
