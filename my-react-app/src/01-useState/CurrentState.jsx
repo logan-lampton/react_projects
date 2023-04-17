@@ -5,10 +5,12 @@ function CurrentState() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    setCount((currentState) => {
-        const newState = currentState + 1
-        return newState
-    });
+    // need to use currentState to have the value increase for each time we click during the setTimeout delay (otherwise it just returns the value before the first click + 1)
+    setTimeout(() => {
+      setCount((currentState) => {
+        return currentState + 1;
+      });
+    }, 3000);
   };
 
   return (
