@@ -6,11 +6,13 @@ function App() {
   
   return <h2>{people.map((person) => {
     return (
-      <div key={person.id}>
+      <main key={person.id}>
+      <div>
         <img src={person.image}></img>
         <div>{person.name}</div>
         <div>{person.age}</div>
       </div>
+      </main>
     )
   })}</h2>;
 }
