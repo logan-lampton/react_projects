@@ -1,10 +1,10 @@
 import "./App.css";
-import CurrentState from './01-useState/CurrentState';
+import Fundementals from './02-useEffect/Fundementals';
 
 function App() {
   return (
     <div className='container'>
-      <CurrentState />
+      <Fundementals />
     </div>
   );
 }
