@@ -6,4 +6,17 @@ function Person() {
   )
 }
 
+// Fix!!!
+{/* <h2>
+{people.map((person) => {
+  return (
+    <div key={person.id}>
+      <img src={person.image}></img>
+      <div>{person.name}</div>
+      <div>{person.age}</div>
+    </div>
+  );
+})}
+</h2> */}
+
 export default Person
