@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Person from './Person';
 
-function List() {
+function List({ people }) {
   return (
-    <div>List</div>
-  )
+    <section>
+      {people.map((person) => {
+        return (
+            <Person key={person.id} {...person}/>
+        );
+      })}
+    </section>
+  );
 }
 
-export default List
+export default List;

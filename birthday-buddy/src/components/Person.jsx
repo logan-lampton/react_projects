@@ -1,22 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Person() {
+function Person({ image, name, age }) {
   return (
-    <div>Person</div>
-  )
+    <article className='person'>
+      <img src={image} alt={name} className='img'></img>
+      <div>
+        <h4>{name}</h4>
+        <p>Age: {age}</p>
+        </div>
+    </article>
+  );
 }
 
-// Fix!!!
-{/* <h2>
-{people.map((person) => {
-  return (
-    <div key={person.id}>
-      <img src={person.image}></img>
-      <div>{person.name}</div>
-      <div>{person.age}</div>
-    </div>
-  );
-})}
-</h2> */}
-
-export default Person
+export default Person;
