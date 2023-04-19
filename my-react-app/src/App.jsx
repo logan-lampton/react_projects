@@ -1,10 +1,10 @@
 import "./App.css";
-import Fundementals from './02-useEffect/Fundementals';
+import FetchChallenge from './02-useEffect/FetchChallenge';
 
 function App() {
   return (
     <div className='container'>
-      <Fundementals />
+      <FetchChallenge />
     </div>
   );
 }
