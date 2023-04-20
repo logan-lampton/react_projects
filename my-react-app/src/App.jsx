@@ -1,10 +1,10 @@
 import "./App.css";
-import MultipleReturns from './02-useEffect/MultipleReturns';
+import MultipleReturnsFetch from './02-useEffect/MultipleReturnsFetch';
 
 function App() {
   return (
     <div className='container'>
-      <MultipleReturns />
+      <MultipleReturnsFetch />
     </div>
   );
 }
