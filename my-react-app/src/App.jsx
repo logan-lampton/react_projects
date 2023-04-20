@@ -1,10 +1,10 @@
 import "./App.css";
-import TurthyFalsy from './02-useEffect/TurthyFalsy';
+import ToggleChallenge from './02-useEffect/ToggleChallenge';
 
 function App() {
   return (
     <div className='container'>
-      <TurthyFalsy />
+      <ToggleChallenge />
     </div>
   );
 }
