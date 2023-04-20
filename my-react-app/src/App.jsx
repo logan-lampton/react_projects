@@ -1,10 +1,10 @@
 import "./App.css";
-import FetchChallenge from './02-useEffect/FetchChallenge';
+import MultipleReturns from './02-useEffect/MultipleReturns';
 
 function App() {
   return (
     <div className='container'>
-      <FetchChallenge />
+      <MultipleReturns />
     </div>
   );
 }
