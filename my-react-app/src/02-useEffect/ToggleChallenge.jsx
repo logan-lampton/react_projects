@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function ToggleChallenge() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
 
   const handleToggle = () => {
     return setToggle(!toggle);
@@ -9,10 +9,14 @@ function ToggleChallenge() {
 
   return (
     <>
-      <button onClick={handleToggle} className='btn'>
-        Toggle
-      </button>
-      {toggle ? <div>Toggle On</div> : <div>Toggle Off</div>}
+    {toggle ? 
+    <button onClick={handleToggle} className='btn' style={{backgroundColor: 'green'}}>
+    Toggle
+  </button> :
+    <button onClick={handleToggle} className='btn' style={{backgroundColor: 'red'}}>
+    Toggle
+  </button>
+}
     </>
   );
 }
