@@ -15,7 +15,7 @@ function MultipleReturnsFetch() {
         if (!response.ok) {
           setIsError(true);
           setIsLoading(false);
-          return
+          return;
         }
         const user = await response.json();
         setUser(user);
@@ -32,25 +32,21 @@ function MultipleReturnsFetch() {
   } else if (isError) {
     return <div>Error loading the user</div>;
   }
+  const { id, avatar_url, company, name, email, html_url } = user;
   return (
     <>
       <h1>User:</h1>
       <div>
-        {user.map((user) => {
-          const { id, avatar_url, company, name, email, html_url } = user;
-          return (
-            <div key={id}>
-              <img
-                style={{ width: "150px", borderRadius: "25px" }}
-                src={avatar_url}
-                alt={name}
-              />
-              <h3>{name}</h3>
-              <p>{company}</p>
-              <a src={html_url}>{email}</a>
-            </div>
-          );
-        })}
+        <div key={id}>
+          <img
+            style={{ width: "150px", borderRadius: "25px" }}
+            src={avatar_url}
+            alt={name}
+          />
+          <h3>{name}</h3>
+          <p>{company}</p>
+          <a src={html_url}>{email}</a>
+        </div>
       </div>
     </>
   );
