@@ -1,10 +1,10 @@
 import "./App.css";
-import ToggleChallenge from './02-useEffect/ToggleChallenge';
+import UserChallenge from './02-useEffect/UserChallenge';
 
 function App() {
   return (
     <div className='container'>
-      <ToggleChallenge />
+      <UserChallenge />
     </div>
   );
 }
