@@ -1,10 +1,10 @@
 import "./App.css";
-import MultipleReturnsFetch from './02-useEffect/MultipleReturnsFetch';
+import TurthyFalsy from './02-useEffect/TurthyFalsy';
 
 function App() {
   return (
     <div className='container'>
-      <MultipleReturnsFetch />
+      <TurthyFalsy />
     </div>
   );
 }
