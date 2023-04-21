@@ -12,7 +12,8 @@ function Tour({ id, name, info, image, price, handleDelete }) {
       <img src={image} alt={name} className='img' />
       <span className='tour-price'>${price}</span>
       <div className='tour-info'>
-        <h5 onClick={toggleReadMore}>{name}</h5>
+        <h5>{name}</h5>
+        <button className='btn btn-block' onClick={toggleReadMore}>Info</button>
         {readMore && <p>{info}</p>}
         <button
           className='btn btn-block delete-btn'

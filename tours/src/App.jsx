@@ -39,6 +39,20 @@ const App = () => {
     );
   }
 
+  if (tours.length === 0) {
+    return (
+      <main>
+        <h2>Please refresh tours</h2>
+        <button
+          type='button'
+          style={{ marginTop: "2rem"}}
+          className='btn'
+          onClick={fetchTours}
+        >Refresh</button>
+      </main>
+    );
+  }
+
   return (
     <main>
       <Tours tours={tours} handleDelete={handleDelete} />
