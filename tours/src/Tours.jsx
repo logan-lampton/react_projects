@@ -1,5 +1,4 @@
 import Tour from "./Tour";
-import { useState } from "react";
 
 function Tours({ tours, handleDelete }) {
   return (
