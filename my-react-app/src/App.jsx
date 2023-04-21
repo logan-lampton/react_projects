@@ -1,10 +1,10 @@
 import "./App.css";
-import UserChallenge from './02-useEffect/UserChallenge';
+import CleanUp from './02-useEffect/CleanUp';
 
 function App() {
   return (
     <div className='container'>
-      <UserChallenge />
+      <CleanUp />
     </div>
   );
 }
