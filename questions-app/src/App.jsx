@@ -6,7 +6,7 @@ import Questions from './Questions';
 const App = () => {
   const [questions, setQuestions] = useState(data)
 
-  return <h2><Questions /></h2>;
+  return <h2><Questions questions={questions}/></h2>;
 };
 
 export default App;
