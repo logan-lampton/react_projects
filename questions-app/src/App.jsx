@@ -8,12 +8,17 @@ const App = () => {
   const [activeId, setActiveId] = useState(null);
 
   const toggleQuestion = (id) => {
-    setActiveId(id)
-  } 
+    const newActiveId = id === activeId ? null : id;
+    setActiveId(newActiveId);
+  };
 
   return (
     <h2>
-      <Questions questions={questions} activeId={activeId} toggleQuestion={toggleQuestion}/>
+      <Questions
+        questions={questions}
+        activeId={activeId}
+        toggleQuestion={toggleQuestion}
+      />
     </h2>
   );
 };
