@@ -1,12 +1,21 @@
-import { useState } from 'react';
-import data from './data';
-import SingleQuestion from './SingleQuestion';
-import Questions from './Questions';
+import { useState } from "react";
+import data from "./data";
+import SingleQuestion from "./SingleQuestion";
+import Questions from "./Questions";
 
 const App = () => {
-  const [questions, setQuestions] = useState(data)
+  const [questions, setQuestions] = useState(data);
+  const [activeId, setActiveId] = useState(null);
 
-  return <h2><Questions questions={questions}/></h2>;
+  const toggleQuestion = (id) => {
+    setActiveId(id)
+  } 
+
+  return (
+    <h2>
+      <Questions questions={questions} activeId={activeId} toggleQuestion={toggleQuestion}/>
+    </h2>
+  );
 };
 
 export default App;
