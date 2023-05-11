@@ -1,6 +1,7 @@
 import Title from "./components/Title";
 import FirstRequest from "./components/FirstRequest";
 import Headers from "./components/Headers";
+import PostRequest from "./components/PostRequest";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
         </div>
         <div className='app-section'>
           <Headers />
+        </div>
+        <div className='app-section'>
+          <PostRequest />
         </div>
       </div>
     </main>

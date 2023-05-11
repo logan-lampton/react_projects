@@ -19,7 +19,7 @@ function Headers() {
       console.log(error.response);
     }
   };
-  
+
   return (
     <section className='section text-center'>
       <button className='btn' onClick={fetchDadJoke}>
