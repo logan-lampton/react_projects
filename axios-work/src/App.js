@@ -3,7 +3,8 @@ import FirstRequest from "./components/FirstRequest";
 import Headers from "./components/Headers";
 import PostRequest from "./components/PostRequest";
 import GlobalInstance from "./components/GlobalInstance";
-import './axios/global'
+// import './axios/global'
+import CustomInstance from './components/CustomInstance'
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </div>
         <div className='app-section'>
           <GlobalInstance />
+        </div>
+        <div className='app-section'>
+          <CustomInstance />
         </div>
       </div>
     </main>
