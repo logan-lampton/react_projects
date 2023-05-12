@@ -5,6 +5,8 @@ import PostRequest from "./components/PostRequest";
 import GlobalInstance from "./components/GlobalInstance";
 // import './axios/global'
 import CustomInstance from './components/CustomInstance'
+import Interceptors from './components/Interceptors';
+import './axios/interceptors'
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
         </div>
         <div className='app-section'>
           <CustomInstance />
+        </div>
+        <div className='app-section'>
+          <Interceptors />
         </div>
       </div>
     </main>
