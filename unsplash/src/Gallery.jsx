@@ -1,9 +1,19 @@
-import React from 'react'
+import axios from "axios";
+import { useQuery } from '@tanstack/react-query';
+import unsplashKey from "/home/logan/Development/code/phase-6/private-key/unsplashKey.js";
+
+const url = `https://api.unsplash.com/search/photos/?client_id=${unsplashKey}&query=cat`;
 
 function Gallery() {
-  return (
-    <h2>Gallery</h2>
-  )
+  const response = useQuery({
+    queryKey:['images'],
+    queryFn: async () => {
+      const resp = await axios.get(url)
+      return resp.data
+    }
+  })
+  console.log(response)
+  return(<h2>Gallery</h2>)
 }
 
-export default Gallery
+export default Gallery;
