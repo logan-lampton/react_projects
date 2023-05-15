@@ -1,12 +1,15 @@
 // Create a form with an input and a submit button. The input should have the following attributes: type='text', name='search', placeholder='cat', and className='form-input search-input'. When the user submits the form, access (for now log)the input value.
 
+import { useGlobalContext } from './context';
+
 function SearchForm() {
+  const {setSearchTerm} = useGlobalContext();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchValue = e.target.elements.search.value;
     if (!searchValue) return;
-    console.log(searchValue);
+    setSearchTerm(searchValue);
   };
 
   return (
