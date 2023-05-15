@@ -69,6 +69,13 @@ html {
     background-color 0.3s ease-in-out;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundColor: var(--dark-mode-bg-color);
+    --textColor: var(--dark-mode-text-color);
+  }
+} */
+
 .dark-theme {
   --backgroundColor: var(--dark-mode-bg-color);
   --textColor: var(--dark-mode-text-color);
@@ -83,6 +90,7 @@ body {
   font-weight: 400;
   line-height: 1;
 }
+
 p {
   margin: 0;
 }
