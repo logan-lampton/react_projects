@@ -17,5 +17,12 @@ export default function CocktailList() {
     );
   }
 
-  return <h1>cocktailList component</h1>;
+  return (
+    <section className='section'>
+      <h2 className='section-title'>Cocktails</h2>
+      <div className='cocktails-center'>{cocktails.map((cocktail) => {
+        return <Cocktail key={cocktail.id} {...cocktail}/>
+      })}</div>
+    </section>
+  )
 }
