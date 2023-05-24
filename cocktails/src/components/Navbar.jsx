@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link to='/'>
           <img src={logo} alt='Cocktail DB logo' className='logo' />
         </Link>
-        <ul className='nav=links'>
+        <ul className='nav-links'>
           <li>
             <Link to='/'>Home</Link>
           </li>

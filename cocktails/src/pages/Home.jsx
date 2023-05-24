@@ -1,5 +1,12 @@
-import React from "react";
+import { useState } from "react";
+import Cocktail from "../components/Cocktail";
+import SearchForm from "../components/SearchForm";
 
 export default function Home() {
-  return <h1>Home page</h1>;
+  return (
+    <main>
+      <SearchForm />
+      <Cocktail />
+    </main>
+  );
 }
