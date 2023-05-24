@@ -11,7 +11,9 @@ export default function Cocktail({ image, name, info, glass }) {
         <h3>{name}</h3>
         <h4>{glass}</h4>
         <p>{info}</p>
-        <Link to={`/cocktail/${name}`} className='btn btn-primary btn-details'>More info</Link>
+        <Link to={`/cocktail/${name}`} className='btn btn-primary btn-details'>
+          More info
+        </Link>
       </div>
     </article>
   );

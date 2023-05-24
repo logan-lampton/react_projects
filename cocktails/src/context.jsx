@@ -6,14 +6,10 @@ import App from "./App";
 const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 const AppContext = React.createContext();
 
-console.log('Test');
-
 function AppProvider ({ children }) {
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState("a");
   const [cocktails, setCocktails] = useState([]);
-
-  console.log(cocktails);
 
   const fetchDrinks = async () => {
     setLoading(true);
